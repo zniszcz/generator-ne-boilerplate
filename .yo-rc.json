@@ -1,9 +1,9 @@
 {
   "generator-node": {
     "promptValues": {
-      "authorName": "Nowa Era",
+      "authorName": "Nowa Era sp. z o. o.",
       "authorEmail": "a.zniszczynski@nowaera.pl",
-      "authorUrl": ""
+      "authorUrl": "https://nowaera.pl/"
     }
   }
 }

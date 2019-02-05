@@ -4,9 +4,9 @@
   "description": "Nowa Era SPA application boilerplate for static pages.",
   "homepage": "https://github.com/zniszcz/generator-ne-boilerplate",
   "author": {
-    "name": "Nowa Era",
+    "name": "Nowa Era sp. z o. o.",
     "email": "a.zniszczynski@nowaera.pl",
-    "url": ""
+    "url": "https://nowaera.pl/"
   },
   "files": [
     "generators"
