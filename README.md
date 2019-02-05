@@ -1,4 +1,4 @@
-# Nowa Era Static boilerplate generator
+# Nowa Era Static boilerplate generator [![Build Status](https://travis-ci.org/zniszcz/generator-ne-boilerplate.svg?branch=master)](https://travis-ci.org/zniszcz/generator-ne-boilerplate)
 
 ## Prerequisites
 
