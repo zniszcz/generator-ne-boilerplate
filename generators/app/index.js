@@ -7,7 +7,7 @@ module.exports = class extends Generator {
   prompting() {
     // Have Yeoman greet the user.
     this.log(
-      yosay(`Welcome to the priceless ${chalk.red('generator-ne-boilerplate')} generator!`)
+      yosay(`Jestem wywołaniem dodatkowego polecenia`)
     );
 
     const prompts = [
@@ -26,13 +26,16 @@ module.exports = class extends Generator {
   }
 
   writing() {
-    this.fs.copy(
-      this.templatePath('dummyfile.txt'),
-      this.destinationPath('dummyfile.txt')
-    );
+
+    this.log('This is a secret tool well use later');
+
+    // this.fs.copy(
+    //   this.templatePath('dummyfile.txt'),
+    //   this.destinationPath('dummyfile.txt')
+    // );
   }
 
   install() {
-    this.installDependencies();
+    this.npmInstall();
   }
 };
