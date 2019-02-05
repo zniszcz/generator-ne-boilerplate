@@ -29,10 +29,23 @@ module.exports = class extends Generator {
 
     this.log('This is a secret tool well use later');
 
-    // this.fs.copy(
-    //   this.templatePath('dummyfile.txt'),
-    //   this.destinationPath('dummyfile.txt')
-    // );
+    const files = [
+      './config/',
+      './src/',
+      './.babelrc',
+      './.editorconfig',
+      './.eslintrc',
+      './.gitignore',
+      './.nvmrc',
+      './.sass-lint.yml',
+      './package.json',
+      './README.md'
+    ];
+
+    files.forEach((path) => this.fs.copy(
+      this.templatePath(path),
+      this.destinationPath(path))
+    );
   }
 
   install() {
