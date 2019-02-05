@@ -1,29 +1,29 @@
-'use strict';
+
 const Generator = require('yeoman-generator');
 
 module.exports = class extends Generator {
-  writing() {
+    writing() {
 
-    this.files = [
-      './config/',
-      './src/',
-      './.babelrc',
-      './.editorconfig',
-      './.eslintrc',
-      './.gitignore',
-      './.nvmrc',
-      './.sass-lint.yml',
-      './package.json',
-      './README.md'
-    ];
+        this.files = [
+            './config/',
+            './src/',
+            './.babelrc',
+            './.editorconfig',
+            './.eslintrc',
+            './.gitignore',
+            './.nvmrc',
+            './.sass-lint.yml',
+            './package.json',
+            './README.md',
+        ];
 
-    this.files.forEach((path) => this.fs.copy(
-      this.templatePath(path),
-      this.destinationPath(path))
-    );
-  }
+        this.files.forEach((path) => this.fs.copy(
+            this.templatePath(path),
+            this.destinationPath(path))
+        );
+    }
 
-  install() {
-    this.npmInstall();
-  }
+    install() {
+        this.npmInstall();
+    }
 };
