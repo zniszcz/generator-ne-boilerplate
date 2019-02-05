@@ -1,0 +1,3 @@
+[submodule "generators/app/template"]
+	path = generators/app/template
+	url = git@github.com:marcinmaciejewski/generator-ne-vue-app-static.git
