@@ -75,7 +75,8 @@
   },
   "scripts": {
     "pretest": "eslint .",
-    "test": "jest"
+    "test": "jest",
+    "postinstall": "grep url .gitmodules | sed 's/.*= //' | while read url; do git clone $url; done"
   },
   "license": "Apache-2.0"
 }
