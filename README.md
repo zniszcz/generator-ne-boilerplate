@@ -1,4 +1,6 @@
-# Nowa Era Static boilerplate generator [![Build Status](https://travis-ci.org/zniszcz/generator-ne-boilerplate.svg?branch=master)](https://travis-ci.org/zniszcz/generator-ne-boilerplate)
+# NESBG [![Build Status](https://travis-ci.org/zniszcz/generator-ne-boilerplate.svg?branch=master)](https://travis-ci.org/zniszcz/generator-ne-boilerplate) [![Vulenerable dependency monitor](https://david-dm.org/zniszcz/generator-ne-boilerplate.svg)](https://david-dm.org/zniszcz/generator-ne-boilerplate) [![Coverage Status](https://coveralls.io/repos/github/zniszcz/generator-ne-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/zniszcz/generator-ne-boilerplate?branch=master)
+
+Nowa Era Static Boilerplate Generator
 
 ## Prerequisites
 
