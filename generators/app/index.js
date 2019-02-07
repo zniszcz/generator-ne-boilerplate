@@ -21,9 +21,7 @@ module.exports = class extends Generator {
           name: 'vueMode',
           message: 'Do you want SSR?',
           default: true,
-          when: function(answers) {
-
-          }
+          when: (answers) => answers.boilerplateType === 'Vue'
         },
         {
           type: 'confirm',
