@@ -16,7 +16,7 @@ module.exports = class extends Generator {
       },
       {
         type: 'confirm',
-        name: 'vueMode',
+        name: 'addSSR',
         message: 'Do you want SSR?',
         default: true,
         when: (answers) => answers.boilerplateType === 'Vue'
@@ -55,18 +55,39 @@ module.exports = class extends Generator {
   }
 
   writing() {
-    // this.files = [
-    //     './config/',
-    //     './src/',
-    //     './.babelrc',
-    //     './.editorconfig',
-    //     './.eslintrc',
-    //     './.gitignore',
-    //     './.nvmrc',
-    //     './.sass-lint.yml',
-    //     './package.json',
-    //     './README.md',
-    // ];
+    if (this.promptOptions.boilerplateType === 'Static') {
+      this.log('Build type: Static');
+    } else {
+      this.log('Build type: Vue ');
+      if (this.promptOptions.addSSR) {
+        this.log('Vue with SSR');
+      } else {
+        this.log('Vue spa mode');
+      }
+    }
+
+    if (this.promptOptions.unitTests) {
+      this.log('Add Jest');
+    }
+    if (this.promptOptions.editorconfig) {
+      this.log('Add .editorconfig file');
+    }
+    if (this.promptOptions.mockServer) {
+      this.log('Add mock server');
+    }
+
+    this.files = [
+        './config/',
+        './src/',
+        './.babelrc',
+        './.editorconfig',
+        './.eslintrc',
+        './.gitignore',
+        './.nvmrc',
+        './.sass-lint.yml',
+        './package.json',
+        './README.md',
+    ];
 
     // this.files.forEach((path) => this.fs.copy(
     //     this.templatePath(path),
